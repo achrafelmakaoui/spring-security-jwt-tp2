@@ -16,7 +16,7 @@ Ce projet implémente une API REST sécurisée avec **Spring Boot**, **Spring Se
 ## Structure du projet
 
 ```text
-ma.enset.jwtdemo
+com.elmakaoui.jtp_jwt
 ├── config
 │   └── SecurityConfig.java           
 ├── controller
@@ -35,7 +35,7 @@ ma.enset.jwtdemo
 │   └── JwtService.java               
 ├── service
 │   └── CustomUserDetailsService.java  
-└── JwtDemoApplication.java           
+└── TpJwtApplication.java           
 ```
 
 ---
@@ -43,7 +43,7 @@ ma.enset.jwtdemo
 ## Configuration (`application.properties`)
 
 ```properties
-spring.application.name=jwt-demo
+spring.application.name=tp_jwt
 spring.datasource.url=jdbc:h2:mem:securitydb
 spring.datasource.driverClassName=org.h2.Driver
 spring.datasource.username=sa
@@ -52,7 +52,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.h2.console.enabled=true
 spring.h2.console.path=/h2-console
-jwt.secret=VGhpcy1pcy1hLXZlcnktbG9uZy1zZWNyZXQta2V5LWZvci1qd3QtZGVtby0yMDI2
+jwt.secret=(jwt secret chaîne de caractères encodée en Base64)
 jwt.expiration=3600000
 ```
 
